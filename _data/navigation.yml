@@ -1,0 +1,10 @@
+- name: Projects
+  link: /projects
+- name: Blog
+  link: /blog
+
+# If you remove your about page, remember to remove the lines below
+- name: About
+  link: /about
+# And if you are mega inspired, feel free to create a 301 redirect
+# from your about page to your homepage

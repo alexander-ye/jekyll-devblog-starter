@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<main>
+  <h1>My Projects</h1>
+  {% for project in site.projects %}
+  <section>
+    {% include components/project-card.html
+        title = project.title
+        description = project.description
+        url = project.url
+        technologies = project.technologies
+      %}
+    </section>
+  {% endfor %}
+</main>

@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<main>
+  <h1>My Dev Blog</h1>
+  {% for post in site.blog %}
+    {% include components/post-card.html
+        title = post.title
+        description = post.description
+        url = post.url
+      %}
+  {% endfor %}
+  {% include components/post-card.html
+      title = "About Me"
+      description = "Learn more about me!"
+      url = "/about"
+  %}
+</main>
