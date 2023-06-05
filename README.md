@@ -72,6 +72,6 @@ Note that to use GitHub Pages to host your website for free, your repository mus
 Happy building!
 
 
-[live-preview]: devblog-starter-jekyll.netlify.app
+[live-preview]: https://devblog-starter-jekyll.netlify.app
 [netlify-setup-guide]: https://www.netlify.com/blog/2020/04/02/a-step-by-step-guide-jekyll-4.0-on-netlify/
 [github-pages-guide]: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll
