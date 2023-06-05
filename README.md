@@ -24,7 +24,7 @@ Customizations include:
 ### Installation
 Follow the [official documentation to install Jekyll](https://jekyllrb.com/docs/installation/). Be sure to install the required version of Ruby and follow the installation guide for your operating system.
 
-**Make sure you install the versions of Ruby and Jekyll that are compatible with your [chosen hosting solution](#publishing-your-site).**
+**Make sure you install the versions of Ruby and Jekyll that are [compatible][github-jekyll-versioning] with your [chosen hosting solution](#publishing-your-site).**
 
 ### Using This Repository
 After you have installed Ruby and Jekyll, following the docs for either Jekyll or GitHub pages,
@@ -61,11 +61,11 @@ There are two free and easy options to host your website for free:
 I recommend using [Netlify to deploy your Jekyll site](https://www.netlify.com/blog/2020/04/02/a-step-by-step-guide-jekyll-4.0-on-netlify/).
 
 * It's a more flexible solution (e.g. you can keep your repository private and customize the subdomain name to your liking).
-* It is currently easier to ues&mdash;there is less setup required, as you do not need to worry about version compatibility in your `Gemfile` unless you add additional Gems.
+* It is currently easier to use&mdash;there is less setup required, as you do not need to worry about version compatibility in your `Gemfile` unless you add additional Gems.
 
 ### [GitHub Pages][github-pages-guide]
 
-The latest versions of Jekyll and Ruby are incompatible with the current version of GitHub Pages. If you decide to use GitHub pages, be sure to follow the official GitHub Docs to [create a GitHub Pages site with Jekyll][github-pages-guide] and ensure [version compatibility](https://pages.github.com/versions/) in your `Gemfile`.
+The latest versions of Jekyll and Ruby are incompatible with the current version of GitHub Pages. If you decide to use GitHub pages, be sure to follow the official GitHub Docs to [create a GitHub Pages site with Jekyll][github-pages-guide] and ensure [version compatibility][github-jekyll-versioning] in your `Gemfile`.
 
 Note that to use GitHub Pages to host your website for free, your repository must be made public.
 
@@ -73,5 +73,6 @@ Happy building!
 
 
 [live-preview]: https://devblog-starter-jekyll.netlify.app
+[github-jekyll-versioning]: https://pages.github.com/versions/
 [netlify-setup-guide]: https://www.netlify.com/blog/2020/04/02/a-step-by-step-guide-jekyll-4.0-on-netlify/
 [github-pages-guide]: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll
