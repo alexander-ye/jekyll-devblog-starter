@@ -1,11 +1,18 @@
 # Starter Jekyll Devblog
 Starter template for a student devblog based on the starter [Jekyll Minima theme](https://github.com/jekyll/minima).
 
-This website starts with:
+View live version here: [live-preview]
 
+This repository gets you started with:
+
+* Minimally formatted placeholder:
+  * Homepage
+  * About page
+  * Blog page
+  * Projects page
 * An example blog post
 * An placeholder project post
-* Minimally formatted homepage, about page, blog page, projects page
+* A placeholder portrait (red panda!)
 
 Customizations include:
 
@@ -17,35 +24,54 @@ Customizations include:
 ### Installation
 Follow the [official documentation to install Jekyll](https://jekyllrb.com/docs/installation/). Be sure to install the required version of Ruby and follow the installation guide for your operating system.
 
-### Code
-Once you have installed Jekyll, [fork and clone](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repository onto your system. 
+**Make sure you install the versions of Ruby and Jekyll that are compatible with your [chosen hosting solution](#publishing-your-site).**
 
-Using your terminal, navigate to the local folder containing your copy of this repository.
+### Using This Repository
+After you have installed Ruby and Jekyll, following the docs for either Jekyll or GitHub pages,
 
-Run the `bundle install` command from your terminal.
+1. [Fork and clone](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repository onto your system. 
+2. Using your terminal, navigate to the local folder containing your copy of this repository.
+3. Run the `bundle install` command from your terminal.
 
-To run a developer version, run `bundle exec jekyll serve`. In your browser, navigate to the `server address` that appears (it will likely be `localhost:4000`) to see a preview of your website.
+You are now free to make changes to the website!
 
-### VSCode Codeblock Note
-If you are using VSCode, in your `settings.json` file, copy and paste the following:
+To preview your website in developer mode:
+
+1. Run `bundle exec jekyll serve`. 
+2. In your browser, navigate to the `server address` that appears (it will likely be `localhost:4000`).
+
+### VSCode Markdown Codeblocks
+If you are using [VSCode](https://code.visualstudio.com/), in your `settings.json` file, copy and paste the following:
+
 ```
   "[markdown]": {
     "editor.formatOnSave": false,
   },  
 ```
+
 This will turn off auto-formatting for your markdown files and ensure `codeblock` sections in your markdown files work properly&mdash;in practice, this mainly means preserving indentations.
 
-### Publishing Your Site
+## Publishing Your Site
 There are two free and easy options to host your website for free:
 
 - [Netlify](https://www.netlify.com/)
 - [GitHub Pages](https://pages.github.com/)
 
-#### [Netlify (Recommended)](https://www.netlify.com/blog/2020/04/02/a-step-by-step-guide-jekyll-4.0-on-netlify/)
-I recommend using [Netlify to deploy your Jekyll site](https://www.netlify.com/blog/2020/04/02/a-step-by-step-guide-jekyll-4.0-on-netlify/) for greater flexibility; e.g. you can keep your repository private and customize the subdomain name to your liking. It is also currently easier to use&mdash;less setup required.
+### [Netlify (Recommended)][netlify-setup-guide]
+I recommend using [Netlify to deploy your Jekyll site](https://www.netlify.com/blog/2020/04/02/a-step-by-step-guide-jekyll-4.0-on-netlify/).
 
-#### [GitHub Pages](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll)
+* It's a more flexible solution (e.g. you can keep your repository private and customize the subdomain name to your liking).
+* It is currently easier to ues&mdash;there is less setup required, as you do not need to worry about version compatibility in your `Gemfile` unless you add additional Gems.
 
-The latest versions of Jekyll and Ruby are incompatible with the current version of GitHub Pages. If you decide to use GitHub pages, be sure to follow the official GitHub Docs to [create a GitHub Pages site with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll) and ensure [version compatibility](https://pages.github.com/versions/) in your `Gemfile`.
+### [GitHub Pages][github-pages-guide]
+
+The latest versions of Jekyll and Ruby are incompatible with the current version of GitHub Pages. If you decide to use GitHub pages, be sure to follow the official GitHub Docs to [create a GitHub Pages site with Jekyll][github-pages-guide] and ensure [version compatibility](https://pages.github.com/versions/) in your `Gemfile`.
 
 Note that to use GitHub Pages to host your website for free, your repository must be made public.
+
+Happy building!
+
+
+[live-preview]: devblog-starter-jekyll.netlify.app
+[netlify-setup-guide]: https://www.netlify.com/blog/2020/04/02/a-step-by-step-guide-jekyll-4.0-on-netlify/
+[github-pages-guide]: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll
