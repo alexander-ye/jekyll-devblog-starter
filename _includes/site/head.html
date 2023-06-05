@@ -2,4 +2,7 @@
   <meta charset="utf-8">
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+  {% if page.canonical_url %}
+    <link rel="canonical" href="{{ page.canonical_url }}" />
+  {% endif %}
 </head>
